@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# React + Vite + Tailwind CSS + Context API (Authentication) + Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application built with Vite and styled using Tailwind CSS. It incorporates user authentication (Register/Login) using Context API and includes a simple Todo app that allows users to manage tasks after logging in.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite**: Fast build and development for React.
+- **Tailwind CSS**: A utility-first CSS framework for styling with responsive design and custom colors.
+- **Authentication**: User authentication (register and login) using Context API.
+- **Formik & Yup**: Form handling and validation for Register and Login forms.
+- **Todo App**: Add, remove, and manage tasks (accessible after logging in).
+- **Responsive Design**: Fully responsive design with Tailwind CSS.
+- **Toast Notifications**: Success and error messages using react-toastify.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A lightweight, fast build tool for modern web projects.
+- **Tailwind CSS**: A utility-first CSS framework for creating responsive layouts.
+- **Context API**: Used for managing user authentication and global state.
+- **Formik & Yup**: Form management and validation for login/register forms.
+- **react-toastify**: Notifications for success and error handling.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+
+## Getting Started
+
+ **Clone the repository:**
+```bash
+git clone https://github.com/bytecode95/assignment-01.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+##  Install dependencies:
+```bash
+npm install
 ```
